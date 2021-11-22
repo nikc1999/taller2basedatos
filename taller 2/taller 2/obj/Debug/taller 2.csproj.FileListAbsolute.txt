@@ -1,0 +1,33 @@
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\taller 2.exe.config
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\taller 2.exe
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\taller 2.pdb
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\Google.Protobuf.dll
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\MySql.Data.dll
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\System.Buffers.dll
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\System.Memory.dll
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\ZstdNet.dll
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\Google.Protobuf.pdb
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\Google.Protobuf.xml
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\MySql.Data.xml
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\System.Buffers.xml
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\System.Memory.xml
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\manve\source\repos\taller 2\taller 2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\manve\source\repos\taller 2\taller 2\obj\Debug\taller 2.csproj.AssemblyReference.cache
+C:\Users\manve\source\repos\taller 2\taller 2\obj\Debug\taller_2.Form1.resources
+C:\Users\manve\source\repos\taller 2\taller 2\obj\Debug\taller_2.Properties.Resources.resources
+C:\Users\manve\source\repos\taller 2\taller 2\obj\Debug\taller 2.csproj.GenerateResource.cache
+C:\Users\manve\source\repos\taller 2\taller 2\obj\Debug\taller 2.csproj.CoreCompileInputs.cache
+C:\Users\manve\source\repos\taller 2\taller 2\obj\Debug\taller 2.csproj.CopyComplete
+C:\Users\manve\source\repos\taller 2\taller 2\obj\Debug\taller 2.exe
+C:\Users\manve\source\repos\taller 2\taller 2\obj\Debug\taller 2.pdb

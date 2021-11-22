@@ -1,0 +1,1 @@
+Server=localhost;Port=3308;Database=test1;Uid=root;Pwd=AnVisiOn1;

@@ -35,5 +35,10 @@ namespace taller_2
             }
             conex.close();
         }
+
+        private void buttonSesionAdmin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

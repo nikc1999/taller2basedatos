@@ -7,28 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp1;
 
 namespace taller_2
 {
-    public partial class Form2 : Form
+    public partial class AutenticarAdmin : Form
     {
-        public Form2()
+        public AutenticarAdmin()
         {
             InitializeComponent();
         }
 
-        private void textBoxContra_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void buttonContra_Click(object sender, EventArgs e)
+        private void AutenticarAdmin_Load(object sender, EventArgs e)
         {
 
         }

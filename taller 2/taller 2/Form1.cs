@@ -38,6 +38,11 @@ namespace taller_2
 
         private void buttonSesionAdmin_Click(object sender, EventArgs e)
         {
+            AutenticarAdmin autenticarAdmin = new AutenticarAdmin();
+            autenticarAdmin.Show();
+            //min 48 ayudantia 5
+            //AgregarCliente test = new AgregarCliente();
+            //test.Show();
 
         }
     }

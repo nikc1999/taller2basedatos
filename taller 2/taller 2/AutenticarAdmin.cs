@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1;
 
 namespace taller_2
 {
@@ -19,6 +20,15 @@ namespace taller_2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ConexMySQL conex = new ConexMySQL();
+            conex.open();
+            string query = "SELECT contra FROM contrasena;";
+            if (conex.selectQueryScalar(query) == textBox1.Text)
+            {
+                MessageBox.Show("contrasena correcta");
+                Admin admin = new Admin();
+                admin.Show();
+            }
 
         }
 

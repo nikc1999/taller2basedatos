@@ -40,6 +40,7 @@ namespace taller_2
             this.buttonAgregarCliente.TabIndex = 0;
             this.buttonAgregarCliente.Text = "Agregar Cliente";
             this.buttonAgregarCliente.UseVisualStyleBackColor = true;
+            this.buttonAgregarCliente.Click += new System.EventHandler(this.buttonAgregarCliente_Click);
             // 
             // Admin
             // 

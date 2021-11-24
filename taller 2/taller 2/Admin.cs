@@ -16,5 +16,11 @@ namespace taller_2
         {
             InitializeComponent();
         }
+
+        private void buttonAgregarCliente_Click(object sender, EventArgs e)
+        {
+            AgregarCliente agregarCliente = new AgregarCliente();
+            agregarCliente.Show();
+        }
     }
 }

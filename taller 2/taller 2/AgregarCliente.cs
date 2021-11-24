@@ -37,7 +37,7 @@ namespace taller_2
         {
             ConexMySQL conex = new ConexMySQL();
             conex.open();
-            string insertar = "INSERT INTO cliente(RUT,Nombre,Email) VALUES ('" + textBoxRut.Text + "','" + textBoxNombre.Text + "','" + textBoxEmail + "');";
+            string insertar = "INSERT INTO cliente(RUT,Nombre,Email) VALUES ('" + textBoxRut.Text + "','" + textBoxNombre.Text + "','" + textBoxEmail.Text + "');";
             int insercionExitosa = 0;
             insercionExitosa = conex.executeNonQuery(insertar); //este metodo retorna un 1 si se inserto bien o 0 si no se pudo insertar
             if (insercionExitosa == 1)

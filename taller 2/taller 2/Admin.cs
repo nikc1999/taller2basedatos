@@ -25,7 +25,8 @@ namespace taller_2
 
         private void buttonAgregarPelicula_Click(object sender, EventArgs e)
         {
-
+            AgregarPelicula agregarPelicula = new AgregarPelicula();
+            agregarPelicula.Show();
         }
 
         private void buttonAgregarActor_Click(object sender, EventArgs e)
@@ -35,6 +36,18 @@ namespace taller_2
         }
 
         private void buttonAgregarDirector_Click(object sender, EventArgs e)
+        {
+            AgregarDirector agregarDirector = new AgregarDirector();
+            agregarDirector.Show();
+        }
+
+        private void buttonEliminarCliente_Click(object sender, EventArgs e)
+        {
+            EliminarCliente eliminarCliente = new EliminarCliente();
+            eliminarCliente.Show();
+        }
+
+        private void buttonAgregarDinero_Click(object sender, EventArgs e)
         {
 
         }

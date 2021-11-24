@@ -29,6 +29,7 @@ namespace taller_2
                 Admin admin = new Admin();
                 admin.Show();
             }
+            conex.close();
 
         }
 

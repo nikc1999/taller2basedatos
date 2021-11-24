@@ -33,10 +33,10 @@ namespace taller_2
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.buttonAgregarCliente = new System.Windows.Forms.Button();
             this.textBoxLugarNacimiento = new System.Windows.Forms.TextBox();
-            this.textBoxFecha = new System.Windows.Forms.TextBox();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.buttonAgregar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label4
@@ -76,16 +76,6 @@ namespace taller_2
             this.label5.TabIndex = 14;
             this.label5.Text = "Fecha";
             // 
-            // buttonAgregarCliente
-            // 
-            this.buttonAgregarCliente.Location = new System.Drawing.Point(364, 265);
-            this.buttonAgregarCliente.Name = "buttonAgregarCliente";
-            this.buttonAgregarCliente.Size = new System.Drawing.Size(75, 23);
-            this.buttonAgregarCliente.TabIndex = 13;
-            this.buttonAgregarCliente.Text = "Agregar";
-            this.buttonAgregarCliente.UseVisualStyleBackColor = true;
-            this.buttonAgregarCliente.Click += new System.EventHandler(this.buttonAgregarCliente_Click);
-            // 
             // textBoxLugarNacimiento
             // 
             this.textBoxLugarNacimiento.Location = new System.Drawing.Point(289, 192);
@@ -93,14 +83,6 @@ namespace taller_2
             this.textBoxLugarNacimiento.Size = new System.Drawing.Size(254, 20);
             this.textBoxLugarNacimiento.TabIndex = 12;
             this.textBoxLugarNacimiento.TextChanged += new System.EventHandler(this.textBoxLugarNacimiento_TextChanged);
-            // 
-            // textBoxFecha
-            // 
-            this.textBoxFecha.Location = new System.Drawing.Point(289, 150);
-            this.textBoxFecha.Name = "textBoxFecha";
-            this.textBoxFecha.Size = new System.Drawing.Size(254, 20);
-            this.textBoxFecha.TabIndex = 11;
-            this.textBoxFecha.TextChanged += new System.EventHandler(this.textBoxFecha_TextChanged);
             // 
             // textBoxNombre
             // 
@@ -110,18 +92,39 @@ namespace taller_2
             this.textBoxNombre.TabIndex = 10;
             this.textBoxNombre.TextChanged += new System.EventHandler(this.textBoxNombre_TextChanged);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(289, 146);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(254, 20);
+            this.dateTimePicker1.TabIndex = 18;
+            this.dateTimePicker1.Value = new System.DateTime(2021, 10, 7, 0, 0, 0, 0);
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // buttonAgregar
+            // 
+            this.buttonAgregar.Location = new System.Drawing.Point(354, 255);
+            this.buttonAgregar.Name = "buttonAgregar";
+            this.buttonAgregar.Size = new System.Drawing.Size(75, 23);
+            this.buttonAgregar.TabIndex = 19;
+            this.buttonAgregar.Text = "Agregar";
+            this.buttonAgregar.UseVisualStyleBackColor = true;
+            this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);
+            // 
             // AgregarActor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonAgregar);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.buttonAgregarCliente);
             this.Controls.Add(this.textBoxLugarNacimiento);
-            this.Controls.Add(this.textBoxFecha);
             this.Controls.Add(this.textBoxNombre);
             this.Name = "AgregarActor";
             this.Text = "s";
@@ -137,9 +140,9 @@ namespace taller_2
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button buttonAgregarCliente;
         private System.Windows.Forms.TextBox textBoxLugarNacimiento;
-        private System.Windows.Forms.TextBox textBoxFecha;
         private System.Windows.Forms.TextBox textBoxNombre;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button buttonAgregar;
     }
 }

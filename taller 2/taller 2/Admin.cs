@@ -49,7 +49,8 @@ namespace taller_2
 
         private void buttonAgregarDinero_Click(object sender, EventArgs e)
         {
-
+            AgregarDinero agregarDinero = new AgregarDinero();
+            agregarDinero.Show();
         }
     }
 }

@@ -22,5 +22,21 @@ namespace taller_2
             AgregarCliente agregarCliente = new AgregarCliente();
             agregarCliente.Show();
         }
+
+        private void buttonAgregarPelicula_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAgregarActor_Click(object sender, EventArgs e)
+        {
+            AgregarActor agregarActor = new AgregarActor();
+            agregarActor.Show();
+        }
+
+        private void buttonAgregarDirector_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

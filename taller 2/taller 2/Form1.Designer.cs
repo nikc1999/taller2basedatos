@@ -32,6 +32,7 @@ namespace taller_2
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.buttonSesionAdmin = new System.Windows.Forms.Button();
             this.buttonArrendarPelicula = new System.Windows.Forms.Button();
+            this.buttonBusquedaRut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -56,19 +57,30 @@ namespace taller_2
             // 
             // buttonArrendarPelicula
             // 
-            this.buttonArrendarPelicula.Location = new System.Drawing.Point(336, 60);
+            this.buttonArrendarPelicula.Location = new System.Drawing.Point(532, 106);
             this.buttonArrendarPelicula.Name = "buttonArrendarPelicula";
-            this.buttonArrendarPelicula.Size = new System.Drawing.Size(75, 23);
+            this.buttonArrendarPelicula.Size = new System.Drawing.Size(116, 23);
             this.buttonArrendarPelicula.TabIndex = 2;
-            this.buttonArrendarPelicula.Text = "Arrendar Pelicula";
+            this.buttonArrendarPelicula.Text = "7Arrendar Pelicula";
             this.buttonArrendarPelicula.UseVisualStyleBackColor = true;
             this.buttonArrendarPelicula.Click += new System.EventHandler(this.buttonArrendarPelicula_Click);
+            // 
+            // buttonBusquedaRut
+            // 
+            this.buttonBusquedaRut.Location = new System.Drawing.Point(532, 144);
+            this.buttonBusquedaRut.Name = "buttonBusquedaRut";
+            this.buttonBusquedaRut.Size = new System.Drawing.Size(116, 23);
+            this.buttonBusquedaRut.TabIndex = 3;
+            this.buttonBusquedaRut.Text = "8 Busqueda Por RUT";
+            this.buttonBusquedaRut.UseVisualStyleBackColor = true;
+            this.buttonBusquedaRut.Click += new System.EventHandler(this.buttonBusquedaRut_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(742, 478);
+            this.Controls.Add(this.buttonBusquedaRut);
             this.Controls.Add(this.buttonArrendarPelicula);
             this.Controls.Add(this.buttonSesionAdmin);
             this.Controls.Add(this.comboBox1);
@@ -85,6 +97,7 @@ namespace taller_2
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button buttonSesionAdmin;
         private System.Windows.Forms.Button buttonArrendarPelicula;
+        private System.Windows.Forms.Button buttonBusquedaRut;
     }
 }
 

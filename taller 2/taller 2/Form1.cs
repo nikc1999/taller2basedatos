@@ -51,5 +51,11 @@ namespace taller_2
             ArriendoPelicula arriendoPelicula = new ArriendoPelicula();
             arriendoPelicula.Show();        
         }
+
+        private void buttonBusquedaRut_Click(object sender, EventArgs e)
+        {
+            BusquedaRut busquedaRut = new BusquedaRut();
+            busquedaRut.Show();
+        }
     }
 }

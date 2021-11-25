@@ -137,6 +137,12 @@
     <Compile Include="AutenticarAdmin.Designer.cs">
       <DependentUpon>AutenticarAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="BusquedaRut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusquedaRut.Designer.cs">
+      <DependentUpon>BusquedaRut.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConexMySQL.cs" />
     <Compile Include="EliminarCliente.cs">
       <SubType>Form</SubType>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AutenticarAdmin.resx">
       <DependentUpon>AutenticarAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusquedaRut.resx">
+      <DependentUpon>BusquedaRut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EliminarCliente.resx">
       <DependentUpon>EliminarCliente.cs</DependentUpon>

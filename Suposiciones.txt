@@ -1,0 +1,1 @@
+* se hace el supuesto de que una persona no arrendara la misma pelicula mas de 1 ves al dia

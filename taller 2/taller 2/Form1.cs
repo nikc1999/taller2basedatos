@@ -45,5 +45,11 @@ namespace taller_2
             //test.Show();
 
         }
+
+        private void buttonArrendarPelicula_Click(object sender, EventArgs e)
+        {
+            ArriendoPelicula arriendoPelicula = new ArriendoPelicula();
+            arriendoPelicula.Show();        
+        }
     }
 }

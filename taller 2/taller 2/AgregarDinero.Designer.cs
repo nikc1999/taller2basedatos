@@ -51,6 +51,7 @@ namespace taller_2
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(0, 13);
             this.labelEmail.TabIndex = 38;
+            this.labelEmail.Click += new System.EventHandler(this.labelEmail_Click);
             // 
             // labelNombre
             // 
@@ -59,6 +60,7 @@ namespace taller_2
             this.labelNombre.Name = "labelNombre";
             this.labelNombre.Size = new System.Drawing.Size(0, 13);
             this.labelNombre.TabIndex = 37;
+            this.labelNombre.Click += new System.EventHandler(this.labelNombre_Click);
             // 
             // buttonAgregarSaldo
             // 
@@ -80,6 +82,7 @@ namespace taller_2
             this.label4.Size = new System.Drawing.Size(268, 31);
             this.label4.TabIndex = 35;
             this.label4.Text = "Agregar saldo cliente";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -89,6 +92,7 @@ namespace taller_2
             this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 34;
             this.label3.Text = "Email";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -98,6 +102,7 @@ namespace taller_2
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 33;
             this.label2.Text = "Nombre";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -107,6 +112,7 @@ namespace taller_2
             this.label1.Size = new System.Drawing.Size(24, 13);
             this.label1.TabIndex = 32;
             this.label1.Text = "Rut";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // buttonBuscar
             // 
@@ -133,6 +139,7 @@ namespace taller_2
             this.labelSaldo.Name = "labelSaldo";
             this.labelSaldo.Size = new System.Drawing.Size(0, 13);
             this.labelSaldo.TabIndex = 40;
+            this.labelSaldo.Click += new System.EventHandler(this.labelSaldo_Click);
             // 
             // label6
             // 
@@ -142,6 +149,7 @@ namespace taller_2
             this.label6.Size = new System.Drawing.Size(34, 13);
             this.label6.TabIndex = 39;
             this.label6.Text = "Saldo";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -151,6 +159,7 @@ namespace taller_2
             this.label5.Size = new System.Drawing.Size(92, 13);
             this.label5.TabIndex = 41;
             this.label5.Text = "Saldo por Agregar";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBoxSaldo
             // 

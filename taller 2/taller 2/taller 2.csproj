@@ -125,6 +125,12 @@
     <Compile Include="AgregarPelicula.Designer.cs">
       <DependentUpon>AgregarPelicula.cs</DependentUpon>
     </Compile>
+    <Compile Include="ArriendoPelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArriendoPelicula.Designer.cs">
+      <DependentUpon>ArriendoPelicula.cs</DependentUpon>
+    </Compile>
     <Compile Include="AutenticarAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +169,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AgregarPelicula.resx">
       <DependentUpon>AgregarPelicula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArriendoPelicula.resx">
+      <DependentUpon>ArriendoPelicula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AutenticarAdmin.resx">
       <DependentUpon>AutenticarAdmin.cs</DependentUpon>

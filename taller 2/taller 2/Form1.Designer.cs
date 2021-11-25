@@ -67,11 +67,11 @@ namespace taller_2
             // 
             // buttonBusquedaRut
             // 
-            this.buttonBusquedaRut.Location = new System.Drawing.Point(532, 144);
+            this.buttonBusquedaRut.Location = new System.Drawing.Point(418, 144);
             this.buttonBusquedaRut.Name = "buttonBusquedaRut";
-            this.buttonBusquedaRut.Size = new System.Drawing.Size(116, 23);
+            this.buttonBusquedaRut.Size = new System.Drawing.Size(297, 23);
             this.buttonBusquedaRut.TabIndex = 3;
-            this.buttonBusquedaRut.Text = "8 Busqueda Por RUT";
+            this.buttonBusquedaRut.Text = "8-13-17-18  Informacion De Cliente Dado Un RUT";
             this.buttonBusquedaRut.UseVisualStyleBackColor = true;
             this.buttonBusquedaRut.Click += new System.EventHandler(this.buttonBusquedaRut_Click);
             // 

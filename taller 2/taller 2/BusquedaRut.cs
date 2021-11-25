@@ -24,6 +24,9 @@ namespace taller_2
         {
             ConexMySQL conex = new ConexMySQL();
             conex.open();
+            //---------------------------------------
+            // REQUISITO 8
+            //---------------------------------------
             string queryExiste = "SELECT COUNT(Nombre) FROM cliente WHERE RUT = '" + textBoxRut.Text + "' AND activo = 'si';";   //retorna 0 si no existe ese rut 
             string queryDatos = "SELECT Nombre, Email, Saldo, RUT FROM cliente WHERE RUT = '" + textBoxRut.Text + "';";
             
@@ -55,7 +58,34 @@ namespace taller_2
                 //NO SE HACE IF YA QUE SIEMPRE RETORNARA UN NUMERO POR EL COUNT
                 //MessageBox.Show("el usuario a pedido" + respuestaCantidad);
                 labelCantPeliculas3meses.Text = respuestaCantidad;
-                
+
+
+                //---------------------------------------
+                // REQUISITO 13
+                //---------------------------------------
+                queryDatos = "SELECT pelicula.Titulo, arriendo.FechaArriendo FROM pelicula JOIN arriendo ON pelicula.Titulo = arriendo.PeliculaTitulo WHERE arriendo.ClienteRUT = '" + textBoxRut.Text + "' AND FechaArriendo >= date(sysdate()) - interval '6' month ORDER BY FechaArriendo desc; ";
+                datos.Clear();
+                datos = conex.selectQuery(queryDatos);
+
+                labelArriendosUltimos6Meses.Text = "";
+                for (int i = 0; i < datos.Rows.Count; i++)
+                {
+                    labelArriendosUltimos6Meses.Text += "\n" + datos.Rows[i][0].ToString() + "    " + datos.Rows[i][1].ToString();
+                }
+
+                //---------------------------------------
+                // REQUISITO 17
+                //---------------------------------------
+                queryDatos = "SELECT PeliculaTitulo, FechaArriendo FROM arriendo WHERE ClienteRUT = '" + textBoxRut.Text + "' AND FechaArriendo >= date(sysdate()) - interval weekday((sysdate())) day;                ";
+                datos.Clear();
+                datos = conex.selectQuery(queryDatos);
+
+                labelArriendosSemanaActual.Text = "";
+                for (int i = 0; i < datos.Rows.Count; i++)
+                {
+                    labelArriendosSemanaActual.Text += "\n" + datos.Rows[i][0].ToString() + "    " + datos.Rows[i][1].ToString();
+                }
+
             }
             else
             {
@@ -63,6 +93,15 @@ namespace taller_2
             }
 
             conex.close();
+        }
+
+        private void BusquedaRut_Load(object sender, EventArgs e)
+        {
+            labelArriendosUltimos6Meses.Text = "";
+            labelNombre.Text = "";
+            labelEmail.Text = "";
+            labelSaldo.Text = "";
+            labelCantPeliculas3meses.Text = "";
         }
     }
 }

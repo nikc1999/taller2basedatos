@@ -42,9 +42,11 @@ namespace taller_2
             this.buttonBuscarCliente = new System.Windows.Forms.Button();
             this.textBoxRut = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.labelArriendosUltimos6Meses = new System.Windows.Forms.Label();
-            this.labelArriendosSemanaActual = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.listBoxSemanaActual = new System.Windows.Forms.ListBox();
+            this.listBoxUltimoFinDeSemana = new System.Windows.Forms.ListBox();
+            this.listBoxUltimos6Meses = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // labelEmail
@@ -158,47 +160,67 @@ namespace taller_2
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(683, 141);
+            this.label3.Location = new System.Drawing.Point(955, 141);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(131, 13);
             this.label3.TabIndex = 87;
             this.label3.Text = "Arriendos Ultimos 6 Meses";
             // 
-            // labelArriendosUltimos6Meses
-            // 
-            this.labelArriendosUltimos6Meses.AutoSize = true;
-            this.labelArriendosUltimos6Meses.Location = new System.Drawing.Point(683, 169);
-            this.labelArriendosUltimos6Meses.Name = "labelArriendosUltimos6Meses";
-            this.labelArriendosUltimos6Meses.Size = new System.Drawing.Size(19, 13);
-            this.labelArriendosUltimos6Meses.TabIndex = 88;
-            this.labelArriendosUltimos6Meses.Text = "aa";
-            // 
-            // labelArriendosSemanaActual
-            // 
-            this.labelArriendosSemanaActual.AutoSize = true;
-            this.labelArriendosSemanaActual.Location = new System.Drawing.Point(398, 169);
-            this.labelArriendosSemanaActual.Name = "labelArriendosSemanaActual";
-            this.labelArriendosSemanaActual.Size = new System.Drawing.Size(19, 13);
-            this.labelArriendosSemanaActual.TabIndex = 90;
-            this.labelArriendosSemanaActual.Text = "aa";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(398, 141);
+            this.label7.Location = new System.Drawing.Point(384, 141);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(126, 13);
             this.label7.TabIndex = 89;
             this.label7.Text = "Arriendos Semana Actual";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(670, 141);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(155, 13);
+            this.label8.TabIndex = 91;
+            this.label8.Text = "Arriendos Ultimo Fin de semana";
+            // 
+            // listBoxSemanaActual
+            // 
+            this.listBoxSemanaActual.FormattingEnabled = true;
+            this.listBoxSemanaActual.Location = new System.Drawing.Point(673, 169);
+            this.listBoxSemanaActual.Name = "listBoxSemanaActual";
+            this.listBoxSemanaActual.ScrollAlwaysVisible = true;
+            this.listBoxSemanaActual.Size = new System.Drawing.Size(239, 95);
+            this.listBoxSemanaActual.TabIndex = 93;
+            // 
+            // listBoxUltimoFinDeSemana
+            // 
+            this.listBoxUltimoFinDeSemana.FormattingEnabled = true;
+            this.listBoxUltimoFinDeSemana.Location = new System.Drawing.Point(387, 169);
+            this.listBoxUltimoFinDeSemana.Name = "listBoxUltimoFinDeSemana";
+            this.listBoxUltimoFinDeSemana.ScrollAlwaysVisible = true;
+            this.listBoxUltimoFinDeSemana.Size = new System.Drawing.Size(239, 95);
+            this.listBoxUltimoFinDeSemana.TabIndex = 94;
+            // 
+            // listBoxUltimos6Meses
+            // 
+            this.listBoxUltimos6Meses.FormattingEnabled = true;
+            this.listBoxUltimos6Meses.Location = new System.Drawing.Point(958, 169);
+            this.listBoxUltimos6Meses.Name = "listBoxUltimos6Meses";
+            this.listBoxUltimos6Meses.ScrollAlwaysVisible = true;
+            this.listBoxUltimos6Meses.Size = new System.Drawing.Size(239, 95);
+            this.listBoxUltimos6Meses.TabIndex = 95;
             // 
             // BusquedaRut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1241, 656);
-            this.Controls.Add(this.labelArriendosSemanaActual);
+            this.Controls.Add(this.listBoxUltimos6Meses);
+            this.Controls.Add(this.listBoxUltimoFinDeSemana);
+            this.Controls.Add(this.listBoxSemanaActual);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.labelArriendosUltimos6Meses);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.label10);
@@ -235,8 +257,10 @@ namespace taller_2
         private System.Windows.Forms.Button buttonBuscarCliente;
         private System.Windows.Forms.TextBox textBoxRut;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label labelArriendosUltimos6Meses;
-        private System.Windows.Forms.Label labelArriendosSemanaActual;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ListBox listBoxSemanaActual;
+        private System.Windows.Forms.ListBox listBoxUltimoFinDeSemana;
+        private System.Windows.Forms.ListBox listBoxUltimos6Meses;
     }
 }

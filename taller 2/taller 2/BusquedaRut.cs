@@ -67,10 +67,10 @@ namespace taller_2
                 datos.Clear();
                 datos = conex.selectQuery(queryDatos);
 
-                labelArriendosUltimos6Meses.Text = "";
+                listBoxUltimos6Meses.Items.Clear();
                 for (int i = 0; i < datos.Rows.Count; i++)
                 {
-                    labelArriendosUltimos6Meses.Text += "\n" + datos.Rows[i][0].ToString() + "    " + datos.Rows[i][1].ToString();
+                    listBoxUltimos6Meses.Items.Add(datos.Rows[i][0].ToString() + "    " + datos.Rows[i][1].ToString()) ;
                 }
 
                 //---------------------------------------
@@ -80,10 +80,23 @@ namespace taller_2
                 datos.Clear();
                 datos = conex.selectQuery(queryDatos);
 
-                labelArriendosSemanaActual.Text = "";
+                listBoxSemanaActual.Items.Clear();
                 for (int i = 0; i < datos.Rows.Count; i++)
                 {
-                    labelArriendosSemanaActual.Text += "\n" + datos.Rows[i][0].ToString() + "    " + datos.Rows[i][1].ToString();
+                    listBoxSemanaActual.Items.Add(datos.Rows[i][0].ToString() + "    " + datos.Rows[i][1].ToString());
+                }
+
+                //---------------------------------------
+                // REQUISITO 18
+                //---------------------------------------
+                queryDatos = "SELECT PeliculaTitulo , FechaArriendo FROM arriendo WHERE ClienteRUT = '" + textBoxRut.Text + "' AND (fechaArriendo) > 4 and(dayofyear(sysdate()) - dayofyear(fechaArriendo)) < 6 and year(sysdate()) = year(FechaArriendo); ";
+                datos.Clear();
+                datos = conex.selectQuery(queryDatos);
+
+                listBoxUltimoFinDeSemana.Items.Clear();
+                for (int i = 0; i < datos.Rows.Count; i++)
+                {
+                    listBoxUltimoFinDeSemana.Items.Add(datos.Rows[i][0].ToString() + "    " + datos.Rows[i][1].ToString());
                 }
 
             }
@@ -97,11 +110,15 @@ namespace taller_2
 
         private void BusquedaRut_Load(object sender, EventArgs e)
         {
-            labelArriendosUltimos6Meses.Text = "";
+            
             labelNombre.Text = "";
             labelEmail.Text = "";
             labelSaldo.Text = "";
             labelCantPeliculas3meses.Text = "";
+
+            
         }
+
+        
     }
 }

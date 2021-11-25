@@ -40,7 +40,15 @@ namespace taller_2
                 labelEmail.Text = datos.Rows[0]["Email"].ToString();
                 labelSaldo.Text = datos.Rows[0]["Saldo"].ToString();
 
-                saldo = Int32.Parse(labelSaldo.Text);
+                if (datos.Rows[0]["Saldo"].ToString() == "")
+                {
+                    saldo = 0;
+                }
+                else
+                {
+                    saldo = Int32.Parse(datos.Rows[0]["Saldo"].ToString());
+                }
+                
                 buttonAgregarSaldo.Visible = true;
             }
             else
@@ -63,11 +71,11 @@ namespace taller_2
             insercionExitosa = conex.executeNonQuery(actualizar); //este metodo retorna un 1 si se inserto bien o 0 si no se pudo insertar
             if (insercionExitosa == 1)
             {
-                MessageBox.Show("El cliente fue eliminado exitosamente.");
+                MessageBox.Show("El saldo fue agregado exitosamente.");
             }
             else
             {
-                MessageBox.Show("El cliente no se pudo eliminar.");
+                MessageBox.Show("El saldo no se pudo agregar.");
             }
             conex.close();
         }

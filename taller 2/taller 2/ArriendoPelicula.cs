@@ -16,6 +16,7 @@ namespace taller_2
         int precio = 0;
         bool clickCliente = false;
         bool clickPelicula = false;
+        string rutCliente = "";
         public ArriendoPelicula()
         {
             InitializeComponent();
@@ -30,8 +31,8 @@ namespace taller_2
         {
             ConexMySQL conex = new ConexMySQL();
             conex.open();
-            string queryExiste = "SELECT COUNT(Nombre) FROM cliente WHERE RUT = '" + textBoxRut.Text + "';";   //retorna 0 si no existe ese rut 
-            string queryDatos = "SELECT Nombre, Saldo FROM cliente WHERE RUT = '" + textBoxRut.Text + "';";
+            string queryExiste = "SELECT COUNT(Nombre) FROM cliente WHERE RUT = '" + textBoxRut.Text + "' AND activo = 'si';";   //retorna 0 si no existe ese rut 
+            string queryDatos = "SELECT Nombre, Saldo, RUT FROM cliente WHERE RUT = '" + textBoxRut.Text + "';";
             string respuesta = conex.selectQueryScalar(queryExiste);
 
             if (respuesta == "1")
@@ -39,7 +40,7 @@ namespace taller_2
                 //mostrar informacion del cliente y el boton para agregar saldo
                 DataTable datos = conex.selectQuery(queryDatos);
                 labelNombre.Text = datos.Rows[0]["Nombre"].ToString();               
-                
+                rutCliente = datos.Rows[0]["RUT"].ToString();
 
                 if (datos.Rows[0]["Saldo"].ToString() == "")
                 {
@@ -139,43 +140,76 @@ namespace taller_2
             }
             else
             {
-                int saldoRestante = saldo - precio;
+                
 
                 ConexMySQL conex = new ConexMySQL();
                 conex.open();
-                string actualizarSaldo = "UPDATE cliente SET Saldo = " + saldoRestante + " WHERE RUT = '" + textBoxRut.Text + "' AND activo = 'si';";
-                int insercionExitosa = 0;
-                insercionExitosa = conex.executeNonQuery(actualizarSaldo); //este metodo retorna un 1 si se inserto bien o 0 si no se pudo insertar
-                if (insercionExitosa == 1)
+
+                //buscar descuento
+                string descuento = "SELECT ClienteRUT FROM arriendo WHERE FechaArriendo >= date(sysdate()) - interval '20' day GROUP BY ClienteRut;";
+                DataTable rutDescuento = new DataTable();
+                float desc = 0f;
+                rutDescuento = conex.selectQuery(descuento);
+
+                bool descuentoBool = false;
+                for (int i = 0; i < rutDescuento.Rows.Count; i++)
                 {
-                    //arriendo pelicula
-                    string insertar = "INSERT INTO arriendo VALUES('" + textBoxRut.Text + "', '" + labelTituloPelicula.Text + "', date(sysdate()));";
-                    int insercionExitosa2 = 0;
-                    insercionExitosa2 = conex.executeNonQuery(insertar);
-                    if (insercionExitosa2 == 1)
+
+                    if (rutCliente == rutDescuento.Rows[i]["ClienteRut"].ToString())
                     {
-                        string actualizarArriendo = "UPDATE cliente SET UltimoArriendo = date(sysdate()) WHERE RUT = '" + textBoxRut.Text + "';";
-                        int insercionExitosa3 = 0;
-                        insercionExitosa3 = conex.executeNonQuery(actualizarArriendo);
-                        if (insercionExitosa3 == 1)
+                        desc = 0.7f;
+                        MessageBox.Show("DESCUENTO DISPONIBLE");
+                        descuentoBool = true;
+
+
+                    }
+                }
+                if (descuentoBool == false)
+                {
+                    desc = 1f;
+                    //MessageBox.Show("ERROR DESCUENTO");
+                }
+
+
+                string insertar = "INSERT INTO arriendo VALUES('" + rutCliente + "', '" + labelTituloPelicula.Text + "', date(sysdate()));";
+                int insercionExitosa2 = 0;
+                insercionExitosa2 = conex.executeNonQuery(insertar);
+                if (insercionExitosa2 == 1)
+                {
+                    string actualizarArriendo = "UPDATE cliente SET UltimoArriendo = date(sysdate()) WHERE RUT = '" + rutCliente + "';";
+                    int insercionExitosa3 = 0;
+                    insercionExitosa3 = conex.executeNonQuery(actualizarArriendo);
+                    if (insercionExitosa3 == 1)
+                    {
+                        MessageBox.Show("Arriendo Exitoso");
+                        float saldoRestanteFlotante = saldo - (precio * desc);
+                        int saldoRestante = (int)saldoRestanteFlotante;
+
+                        string actualizarSaldo = "UPDATE cliente SET Saldo = " + saldoRestante + " WHERE RUT = '" + rutCliente + "' AND activo = 'si';";
+                        int insercionExitosa = 0;
+                        insercionExitosa = conex.executeNonQuery(actualizarSaldo); //este metodo retorna un 1 si se inserto bien o 0 si no se pudo insertar
+                        if (insercionExitosa == 1)
                         {
-                            MessageBox.Show("Arriendo Exitoso");
+
+
+
                         }
                         else
                         {
-                            MessageBox.Show("ERROR2");
+                            MessageBox.Show("NO SE PUDO DESCONTAR EL SALDO.");
                         }
                     }
                     else
                     {
-                        MessageBox.Show("No puedes arrendar la misma pelicula 2 veces el mismo dia"); 
+                        MessageBox.Show("ERROR2");
                     }
-
                 }
                 else
                 {
-                    MessageBox.Show("NO SE PUDO DESCONTAR EL SALDO.");
+                    MessageBox.Show("No puedes arrendar la misma pelicula 2 veces el mismo dia");
                 }
+
+                
                 conex.close();
 
                 

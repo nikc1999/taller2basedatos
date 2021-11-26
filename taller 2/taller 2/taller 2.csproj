@@ -143,6 +143,12 @@
     <Compile Include="BusquedaRut.Designer.cs">
       <DependentUpon>BusquedaRut.cs</DependentUpon>
     </Compile>
+    <Compile Include="BusquedaTitulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusquedaTitulo.Designer.cs">
+      <DependentUpon>BusquedaTitulo.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConexMySQL.cs" />
     <Compile Include="EliminarCliente.cs">
       <SubType>Form</SubType>
@@ -184,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BusquedaRut.resx">
       <DependentUpon>BusquedaRut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusquedaTitulo.resx">
+      <DependentUpon>BusquedaTitulo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EliminarCliente.resx">
       <DependentUpon>EliminarCliente.cs</DependentUpon>

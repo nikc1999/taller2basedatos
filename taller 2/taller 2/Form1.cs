@@ -57,5 +57,11 @@ namespace taller_2
             BusquedaRut busquedaRut = new BusquedaRut();
             busquedaRut.Show();
         }
+
+        private void buttonBuscarTitulo_Click(object sender, EventArgs e)
+        {
+            BusquedaTitulo busquedaTitulo = new BusquedaTitulo();
+            busquedaTitulo.Show();
+        }
     }
 }

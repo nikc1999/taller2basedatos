@@ -33,6 +33,7 @@ namespace taller_2
             this.buttonSesionAdmin = new System.Windows.Forms.Button();
             this.buttonArrendarPelicula = new System.Windows.Forms.Button();
             this.buttonBusquedaRut = new System.Windows.Forms.Button();
+            this.buttonBuscarTitulo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -75,11 +76,22 @@ namespace taller_2
             this.buttonBusquedaRut.UseVisualStyleBackColor = true;
             this.buttonBusquedaRut.Click += new System.EventHandler(this.buttonBusquedaRut_Click);
             // 
+            // buttonBuscarTitulo
+            // 
+            this.buttonBuscarTitulo.Location = new System.Drawing.Point(418, 191);
+            this.buttonBuscarTitulo.Name = "buttonBuscarTitulo";
+            this.buttonBuscarTitulo.Size = new System.Drawing.Size(297, 23);
+            this.buttonBuscarTitulo.TabIndex = 4;
+            this.buttonBuscarTitulo.Text = "9-10-15  Informacion De Pelicula Dado Titulo";
+            this.buttonBuscarTitulo.UseVisualStyleBackColor = true;
+            this.buttonBuscarTitulo.Click += new System.EventHandler(this.buttonBuscarTitulo_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(742, 478);
+            this.Controls.Add(this.buttonBuscarTitulo);
             this.Controls.Add(this.buttonBusquedaRut);
             this.Controls.Add(this.buttonArrendarPelicula);
             this.Controls.Add(this.buttonSesionAdmin);
@@ -98,6 +110,7 @@ namespace taller_2
         private System.Windows.Forms.Button buttonSesionAdmin;
         private System.Windows.Forms.Button buttonArrendarPelicula;
         private System.Windows.Forms.Button buttonBusquedaRut;
+        private System.Windows.Forms.Button buttonBuscarTitulo;
     }
 }
 

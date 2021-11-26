@@ -70,7 +70,7 @@ namespace taller_2
                 listBoxUltimos6Meses.Items.Clear();
                 for (int i = 0; i < datos.Rows.Count; i++)
                 {
-                    listBoxUltimos6Meses.Items.Add(datos.Rows[i][0].ToString() + "    " + datos.Rows[i][1].ToString()) ;
+                    listBoxUltimos6Meses.Items.Add(datos.Rows[i][0].ToString() + "    " + datos.Rows[i][1].ToString().Split(' ')[0]) ;
                 }
 
                 //---------------------------------------
@@ -83,20 +83,20 @@ namespace taller_2
                 listBoxSemanaActual.Items.Clear();
                 for (int i = 0; i < datos.Rows.Count; i++)
                 {
-                    listBoxSemanaActual.Items.Add(datos.Rows[i][0].ToString() + "    " + datos.Rows[i][1].ToString());
+                    listBoxSemanaActual.Items.Add(datos.Rows[i][0].ToString() + "    " + datos.Rows[i][1].ToString().Split(' ')[0]);
                 }
 
                 //---------------------------------------
                 // REQUISITO 18
                 //---------------------------------------
-                queryDatos = "SELECT PeliculaTitulo , FechaArriendo FROM arriendo WHERE ClienteRUT = '" + textBoxRut.Text + "' AND (fechaArriendo) > 4 and(dayofyear(sysdate()) - dayofyear(fechaArriendo)) < 6 and year(sysdate()) = year(FechaArriendo); ";
+                queryDatos = "SELECT PeliculaTitulo , FechaArriendo FROM arriendo WHERE ClienteRUT = '" + textBoxRut.Text + "' AND weekday(fechaArriendo) > 4 and (dayofyear(sysdate())-dayofyear(fechaArriendo)) < 6 and year(sysdate()) = year(FechaArriendo); ";
                 datos.Clear();
                 datos = conex.selectQuery(queryDatos);
 
                 listBoxUltimoFinDeSemana.Items.Clear();
                 for (int i = 0; i < datos.Rows.Count; i++)
                 {
-                    listBoxUltimoFinDeSemana.Items.Add(datos.Rows[i][0].ToString() + "    " + datos.Rows[i][1].ToString());
+                    listBoxUltimoFinDeSemana.Items.Add(datos.Rows[i][0].ToString() + "    " + datos.Rows[i][1].ToString().Split(' ')[0]);
                 }
 
             }

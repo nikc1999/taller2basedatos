@@ -29,22 +29,14 @@ namespace taller_2
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.buttonSesionAdmin = new System.Windows.Forms.Button();
             this.buttonArrendarPelicula = new System.Windows.Forms.Button();
             this.buttonBusquedaRut = new System.Windows.Forms.Button();
             this.buttonBuscarTitulo = new System.Windows.Forms.Button();
+            this.buttonPeliculasDadoDirector = new System.Windows.Forms.Button();
+            this.buttonTitulosDadoAnioCategoria = new System.Windows.Forms.Button();
+            this.buttonTop5Arrendadas = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(143, 60);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(82, 21);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // buttonSesionAdmin
             // 
@@ -86,16 +78,48 @@ namespace taller_2
             this.buttonBuscarTitulo.UseVisualStyleBackColor = true;
             this.buttonBuscarTitulo.Click += new System.EventHandler(this.buttonBuscarTitulo_Click);
             // 
+            // buttonPeliculasDadoDirector
+            // 
+            this.buttonPeliculasDadoDirector.Location = new System.Drawing.Point(418, 233);
+            this.buttonPeliculasDadoDirector.Name = "buttonPeliculasDadoDirector";
+            this.buttonPeliculasDadoDirector.Size = new System.Drawing.Size(297, 23);
+            this.buttonPeliculasDadoDirector.TabIndex = 5;
+            this.buttonPeliculasDadoDirector.Text = "11 Peliculas Dado Director";
+            this.buttonPeliculasDadoDirector.UseVisualStyleBackColor = true;
+            this.buttonPeliculasDadoDirector.Click += new System.EventHandler(this.buttonPeliculasDadoDirector_Click);
+            // 
+            // buttonTitulosDadoAnioCategoria
+            // 
+            this.buttonTitulosDadoAnioCategoria.Location = new System.Drawing.Point(418, 274);
+            this.buttonTitulosDadoAnioCategoria.Name = "buttonTitulosDadoAnioCategoria";
+            this.buttonTitulosDadoAnioCategoria.Size = new System.Drawing.Size(297, 23);
+            this.buttonTitulosDadoAnioCategoria.TabIndex = 6;
+            this.buttonTitulosDadoAnioCategoria.Text = "12 Titulos Dado Anio Y Categoria";
+            this.buttonTitulosDadoAnioCategoria.UseVisualStyleBackColor = true;
+            this.buttonTitulosDadoAnioCategoria.Click += new System.EventHandler(this.buttonTitulosDadoAnioCategoria_Click);
+            // 
+            // buttonTop5Arrendadas
+            // 
+            this.buttonTop5Arrendadas.Location = new System.Drawing.Point(418, 316);
+            this.buttonTop5Arrendadas.Name = "buttonTop5Arrendadas";
+            this.buttonTop5Arrendadas.Size = new System.Drawing.Size(297, 23);
+            this.buttonTop5Arrendadas.TabIndex = 7;
+            this.buttonTop5Arrendadas.Text = "14 Las Mas Arrendadas";
+            this.buttonTop5Arrendadas.UseVisualStyleBackColor = true;
+            this.buttonTop5Arrendadas.Click += new System.EventHandler(this.buttonTop5Arrendadas_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(742, 478);
+            this.Controls.Add(this.buttonTop5Arrendadas);
+            this.Controls.Add(this.buttonTitulosDadoAnioCategoria);
+            this.Controls.Add(this.buttonPeliculasDadoDirector);
             this.Controls.Add(this.buttonBuscarTitulo);
             this.Controls.Add(this.buttonBusquedaRut);
             this.Controls.Add(this.buttonArrendarPelicula);
             this.Controls.Add(this.buttonSesionAdmin);
-            this.Controls.Add(this.comboBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -105,12 +129,13 @@ namespace taller_2
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button buttonSesionAdmin;
         private System.Windows.Forms.Button buttonArrendarPelicula;
         private System.Windows.Forms.Button buttonBusquedaRut;
         private System.Windows.Forms.Button buttonBuscarTitulo;
+        private System.Windows.Forms.Button buttonPeliculasDadoDirector;
+        private System.Windows.Forms.Button buttonTitulosDadoAnioCategoria;
+        private System.Windows.Forms.Button buttonTop5Arrendadas;
     }
 }
 

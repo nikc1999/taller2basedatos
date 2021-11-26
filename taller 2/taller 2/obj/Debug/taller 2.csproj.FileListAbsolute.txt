@@ -75,3 +75,6 @@ D:\MySpace\Univercidad\2021-2\Bases de Datos\Taller 2\taller2basedatos\taller 2\
 D:\MySpace\Univercidad\2021-2\Bases de Datos\Taller 2\taller2basedatos\taller 2\taller 2\obj\Debug\taller_2.ArriendoPelicula.resources
 D:\MySpace\Univercidad\2021-2\Bases de Datos\Taller 2\taller2basedatos\taller 2\taller 2\obj\Debug\taller_2.BusquedaRut.resources
 D:\MySpace\Univercidad\2021-2\Bases de Datos\Taller 2\taller2basedatos\taller 2\taller 2\obj\Debug\taller_2.BusquedaTitulo.resources
+D:\MySpace\Univercidad\2021-2\Bases de Datos\Taller 2\taller2basedatos\taller 2\taller 2\obj\Debug\taller_2.PeliculasDadoDirector.resources
+D:\MySpace\Univercidad\2021-2\Bases de Datos\Taller 2\taller2basedatos\taller 2\taller 2\obj\Debug\taller_2.TitulosDadoAnioCategoria.resources
+D:\MySpace\Univercidad\2021-2\Bases de Datos\Taller 2\taller2basedatos\taller 2\taller 2\obj\Debug\taller_2.Top5Arrendadas.resources

@@ -25,15 +25,7 @@ namespace taller_2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ConexMySQL conex = new ConexMySQL() ;
-            conex.open();
-            string query = "SELECT * FROM categoria";
-            DataTable categorias = conex.selectQuery(query);
-            for (int i =0; i< categorias.Rows.Count; i++)
-            {
-                comboBox1.Items.Add(categorias.Rows[i]["Nombre"]);
-            }
-            conex.close();
+            
         }
 
         private void buttonSesionAdmin_Click(object sender, EventArgs e)
@@ -62,6 +54,25 @@ namespace taller_2
         {
             BusquedaTitulo busquedaTitulo = new BusquedaTitulo();
             busquedaTitulo.Show();
+        }
+
+        private void buttonPeliculasDadoDirector_Click(object sender, EventArgs e)
+        {
+            PeliculasDadoDirector peliculasDadoDirector = new PeliculasDadoDirector();
+            peliculasDadoDirector.Show();
+        }
+
+        private void buttonTitulosDadoAnioCategoria_Click(object sender, EventArgs e)
+        {
+            TitulosDadoAnioCategoria titulosDadoAnioCategoria = new TitulosDadoAnioCategoria();
+            titulosDadoAnioCategoria.Show();
+        }
+
+        private void buttonTop5Arrendadas_Click(object sender, EventArgs e)
+        {
+            Top5Arrendadas top5Arrendadas = new Top5Arrendadas();
+            top5Arrendadas.Show();
+
         }
     }
 }

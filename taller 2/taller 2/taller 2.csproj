@@ -162,8 +162,26 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PeliculasDadoDirector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeliculasDadoDirector.Designer.cs">
+      <DependentUpon>PeliculasDadoDirector.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TitulosDadoAnioCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TitulosDadoAnioCategoria.Designer.cs">
+      <DependentUpon>TitulosDadoAnioCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Top5Arrendadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Top5Arrendadas.Designer.cs">
+      <DependentUpon>Top5Arrendadas.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,6 +218,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PeliculasDadoDirector.resx">
+      <DependentUpon>PeliculasDadoDirector.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -209,6 +230,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TitulosDadoAnioCategoria.resx">
+      <DependentUpon>TitulosDadoAnioCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Top5Arrendadas.resx">
+      <DependentUpon>Top5Arrendadas.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -28,8 +28,10 @@ namespace taller_2
                 MessageBox.Show("contrasena correcta");
                 Admin admin = new Admin();
                 admin.Show();
+                this.Close();
             }
             conex.close();
+            
 
         }
 

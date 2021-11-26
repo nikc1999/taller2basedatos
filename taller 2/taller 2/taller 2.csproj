@@ -125,11 +125,29 @@
     <Compile Include="AgregarPelicula.Designer.cs">
       <DependentUpon>AgregarPelicula.cs</DependentUpon>
     </Compile>
+    <Compile Include="ArriendoPelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArriendoPelicula.Designer.cs">
+      <DependentUpon>ArriendoPelicula.cs</DependentUpon>
+    </Compile>
     <Compile Include="AutenticarAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AutenticarAdmin.Designer.cs">
       <DependentUpon>AutenticarAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaRut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusquedaRut.Designer.cs">
+      <DependentUpon>BusquedaRut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaTitulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusquedaTitulo.Designer.cs">
+      <DependentUpon>BusquedaTitulo.cs</DependentUpon>
     </Compile>
     <Compile Include="ConexMySQL.cs" />
     <Compile Include="EliminarCliente.cs">
@@ -144,8 +162,38 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListadoClientesPorArriendos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoClientesPorArriendos.Designer.cs">
+      <DependentUpon>ListadoClientesPorArriendos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeliculasDadoDirector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeliculasDadoDirector.Designer.cs">
+      <DependentUpon>PeliculasDadoDirector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeliculasSinArrendarAnio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeliculasSinArrendarAnio.Designer.cs">
+      <DependentUpon>PeliculasSinArrendarAnio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TitulosDadoAnioCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TitulosDadoAnioCategoria.Designer.cs">
+      <DependentUpon>TitulosDadoAnioCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Top5Arrendadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Top5Arrendadas.Designer.cs">
+      <DependentUpon>Top5Arrendadas.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,14 +212,32 @@
     <EmbeddedResource Include="AgregarPelicula.resx">
       <DependentUpon>AgregarPelicula.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ArriendoPelicula.resx">
+      <DependentUpon>ArriendoPelicula.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AutenticarAdmin.resx">
       <DependentUpon>AutenticarAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusquedaRut.resx">
+      <DependentUpon>BusquedaRut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusquedaTitulo.resx">
+      <DependentUpon>BusquedaTitulo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EliminarCliente.resx">
       <DependentUpon>EliminarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoClientesPorArriendos.resx">
+      <DependentUpon>ListadoClientesPorArriendos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeliculasDadoDirector.resx">
+      <DependentUpon>PeliculasDadoDirector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeliculasSinArrendarAnio.resx">
+      <DependentUpon>PeliculasSinArrendarAnio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -181,7 +247,14 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TitulosDadoAnioCategoria.resx">
+      <DependentUpon>TitulosDadoAnioCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Top5Arrendadas.resx">
+      <DependentUpon>Top5Arrendadas.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -195,6 +268,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blokmaster.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

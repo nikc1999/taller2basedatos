@@ -74,5 +74,17 @@ namespace taller_2
             top5Arrendadas.Show();
 
         }
+
+        private void buttonListadoClientesPorArriendos_Click(object sender, EventArgs e)
+        {
+            ListadoClientesPorArriendos listadoClientesPorArriendos = new ListadoClientesPorArriendos();
+            listadoClientesPorArriendos.Show();
+        }
+
+        private void buttonPeliculasSinArrendarAnio_Click(object sender, EventArgs e)
+        {
+            PeliculasSinArrendarAnio peliculasSinArrendarAnio = new PeliculasSinArrendarAnio();
+            peliculasSinArrendarAnio.Show();
+        }
     }
 }

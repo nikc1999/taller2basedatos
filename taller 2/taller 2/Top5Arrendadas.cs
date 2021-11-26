@@ -77,16 +77,6 @@ namespace taller_2
                 }
 
 
-
-
-
-
-
-
-
-
-
-
             }
             else
             {

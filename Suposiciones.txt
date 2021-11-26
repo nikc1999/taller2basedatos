@@ -1,1 +1,2 @@
 * se hace el supuesto de que una persona no arrendara la misma pelicula mas de 1 ves al dia
+* en elrequermiento 16 se asume que son 2 meses en cuanto a dias y no en meses actuales completos

@@ -162,11 +162,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListadoClientesPorArriendos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoClientesPorArriendos.Designer.cs">
+      <DependentUpon>ListadoClientesPorArriendos.cs</DependentUpon>
+    </Compile>
     <Compile Include="PeliculasDadoDirector.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PeliculasDadoDirector.Designer.cs">
       <DependentUpon>PeliculasDadoDirector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeliculasSinArrendarAnio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeliculasSinArrendarAnio.Designer.cs">
+      <DependentUpon>PeliculasSinArrendarAnio.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -218,8 +230,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ListadoClientesPorArriendos.resx">
+      <DependentUpon>ListadoClientesPorArriendos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PeliculasDadoDirector.resx">
       <DependentUpon>PeliculasDadoDirector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeliculasSinArrendarAnio.resx">
+      <DependentUpon>PeliculasSinArrendarAnio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -229,6 +247,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="TitulosDadoAnioCategoria.resx">
       <DependentUpon>TitulosDadoAnioCategoria.cs</DependentUpon>
@@ -249,6 +268,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blokmaster.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

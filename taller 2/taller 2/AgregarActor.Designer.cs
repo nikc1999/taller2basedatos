@@ -37,6 +37,8 @@ namespace taller_2
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.buttonAgregar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxNombreReal = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label4
@@ -52,7 +54,7 @@ namespace taller_2
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(176, 195);
+            this.label3.Location = new System.Drawing.Point(176, 254);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 13);
             this.label3.TabIndex = 16;
@@ -63,14 +65,14 @@ namespace taller_2
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(176, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(84, 13);
             this.label2.TabIndex = 15;
-            this.label2.Text = "Nombre";
+            this.label2.Text = "Nombre Artistico";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(176, 153);
+            this.label5.Location = new System.Drawing.Point(176, 212);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 13);
             this.label5.TabIndex = 14;
@@ -78,7 +80,7 @@ namespace taller_2
             // 
             // textBoxLugarNacimiento
             // 
-            this.textBoxLugarNacimiento.Location = new System.Drawing.Point(289, 192);
+            this.textBoxLugarNacimiento.Location = new System.Drawing.Point(289, 251);
             this.textBoxLugarNacimiento.Name = "textBoxLugarNacimiento";
             this.textBoxLugarNacimiento.Size = new System.Drawing.Size(254, 20);
             this.textBoxLugarNacimiento.TabIndex = 12;
@@ -96,7 +98,7 @@ namespace taller_2
             // 
             this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(289, 146);
+            this.dateTimePicker1.Location = new System.Drawing.Point(289, 205);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(254, 20);
             this.dateTimePicker1.TabIndex = 18;
@@ -105,7 +107,7 @@ namespace taller_2
             // 
             // buttonAgregar
             // 
-            this.buttonAgregar.Location = new System.Drawing.Point(354, 255);
+            this.buttonAgregar.Location = new System.Drawing.Point(348, 313);
             this.buttonAgregar.Name = "buttonAgregar";
             this.buttonAgregar.Size = new System.Drawing.Size(75, 23);
             this.buttonAgregar.TabIndex = 19;
@@ -113,11 +115,30 @@ namespace taller_2
             this.buttonAgregar.UseVisualStyleBackColor = true;
             this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(176, 157);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 13);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Nombre Real";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // textBoxNombreReal
+            // 
+            this.textBoxNombreReal.Location = new System.Drawing.Point(289, 154);
+            this.textBoxNombreReal.Name = "textBoxNombreReal";
+            this.textBoxNombreReal.Size = new System.Drawing.Size(254, 20);
+            this.textBoxNombreReal.TabIndex = 20;
+            // 
             // AgregarActor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBoxNombreReal);
             this.Controls.Add(this.buttonAgregar);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label4);
@@ -144,5 +165,7 @@ namespace taller_2
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button buttonAgregar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxNombreReal;
     }
 }

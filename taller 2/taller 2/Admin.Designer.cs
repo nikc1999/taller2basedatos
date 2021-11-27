@@ -35,6 +35,7 @@ namespace taller_2
             this.buttonAgregarDirector = new System.Windows.Forms.Button();
             this.buttonEliminarCliente = new System.Windows.Forms.Button();
             this.buttonAgregarDinero = new System.Windows.Forms.Button();
+            this.buttonActorPelicula = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonAgregarCliente
@@ -69,7 +70,7 @@ namespace taller_2
             // 
             // buttonAgregarDirector
             // 
-            this.buttonAgregarDirector.Location = new System.Drawing.Point(294, 181);
+            this.buttonAgregarDirector.Location = new System.Drawing.Point(294, 213);
             this.buttonAgregarDirector.Name = "buttonAgregarDirector";
             this.buttonAgregarDirector.Size = new System.Drawing.Size(159, 23);
             this.buttonAgregarDirector.TabIndex = 3;
@@ -79,7 +80,7 @@ namespace taller_2
             // 
             // buttonEliminarCliente
             // 
-            this.buttonEliminarCliente.Location = new System.Drawing.Point(294, 224);
+            this.buttonEliminarCliente.Location = new System.Drawing.Point(294, 256);
             this.buttonEliminarCliente.Name = "buttonEliminarCliente";
             this.buttonEliminarCliente.Size = new System.Drawing.Size(159, 23);
             this.buttonEliminarCliente.TabIndex = 4;
@@ -89,7 +90,7 @@ namespace taller_2
             // 
             // buttonAgregarDinero
             // 
-            this.buttonAgregarDinero.Location = new System.Drawing.Point(294, 269);
+            this.buttonAgregarDinero.Location = new System.Drawing.Point(294, 301);
             this.buttonAgregarDinero.Name = "buttonAgregarDinero";
             this.buttonAgregarDinero.Size = new System.Drawing.Size(159, 23);
             this.buttonAgregarDinero.TabIndex = 5;
@@ -97,11 +98,22 @@ namespace taller_2
             this.buttonAgregarDinero.UseVisualStyleBackColor = true;
             this.buttonAgregarDinero.Click += new System.EventHandler(this.buttonAgregarDinero_Click);
             // 
+            // buttonActorPelicula
+            // 
+            this.buttonActorPelicula.Location = new System.Drawing.Point(294, 174);
+            this.buttonActorPelicula.Name = "buttonActorPelicula";
+            this.buttonActorPelicula.Size = new System.Drawing.Size(159, 23);
+            this.buttonActorPelicula.TabIndex = 6;
+            this.buttonActorPelicula.Text = "Agregar Actor a Pelicula";
+            this.buttonActorPelicula.UseVisualStyleBackColor = true;
+            this.buttonActorPelicula.Click += new System.EventHandler(this.buttonActorPelicula_Click);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonActorPelicula);
             this.Controls.Add(this.buttonAgregarDinero);
             this.Controls.Add(this.buttonEliminarCliente);
             this.Controls.Add(this.buttonAgregarDirector);
@@ -122,5 +134,6 @@ namespace taller_2
         private System.Windows.Forms.Button buttonAgregarDirector;
         private System.Windows.Forms.Button buttonEliminarCliente;
         private System.Windows.Forms.Button buttonAgregarDinero;
+        private System.Windows.Forms.Button buttonActorPelicula;
     }
 }

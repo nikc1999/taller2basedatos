@@ -89,6 +89,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActorPelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActorPelicula.Designer.cs">
+      <DependentUpon>ActorPelicula.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +200,9 @@
     <Compile Include="Top5Arrendadas.Designer.cs">
       <DependentUpon>Top5Arrendadas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ActorPelicula.resx">
+      <DependentUpon>ActorPelicula.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>

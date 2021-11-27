@@ -44,7 +44,7 @@ namespace taller_2
         {
             ConexMySQL conex = new ConexMySQL();
             conex.open();
-            string insertar = "INSERT INTO actor(Nombre,Fecha,LugarNacimiento) VALUES ('" + textBoxNombre.Text + "','" + dateTimePicker1.Text + "','" + textBoxLugarNacimiento.Text + "');";
+            string insertar = "INSERT INTO actor(Nombre,Fecha,LugarNacimiento, NombreReal) VALUES ('" + textBoxNombre.Text + "','" + dateTimePicker1.Text + "','" + textBoxLugarNacimiento.Text + "','" + textBoxNombreReal.Text + "');";
             int insercionExitosa = 0;
             insercionExitosa = conex.executeNonQuery(insertar); //este metodo retorna un 1 si se inserto bien o 0 si no se pudo insertar
             if (insercionExitosa == 1)
@@ -56,6 +56,16 @@ namespace taller_2
                 MessageBox.Show("El actor no se pudo agregar.");
             }
             conex.close();
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
 
         }
     }

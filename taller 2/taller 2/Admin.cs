@@ -52,5 +52,11 @@ namespace taller_2
             AgregarDinero agregarDinero = new AgregarDinero();
             agregarDinero.Show();
         }
+
+        private void buttonActorPelicula_Click(object sender, EventArgs e)
+        {
+            ActorPelicula actorPelicula = new ActorPelicula();
+            actorPelicula.Show();
+        }
     }
 }

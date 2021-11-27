@@ -25,7 +25,7 @@ namespace taller_2
             //---------------------------------------
             // REQUISITO 9
             //---------------------------------------
-            string queryExiste = "SELECT COUNT(PeliculaTitulo) FROM arriendo WHERE PeliculaTitulo = '" + textBoxTitulo.Text + "';";   //retorna 0 si no existe ese rut 
+            string queryExiste = "SELECT COUNT(Titulo) FROM pelicula WHERE Titulo = '" + textBoxTitulo.Text + "';";   //retorna 0 si no existe ese rut 
             string queryDatos = "SELECT ClienteRUT, FechaArriendo FROM arriendo WHERE PeliculaTitulo = '" + textBoxTitulo.Text + "' AND FechaArriendo >= date(sysdate()) - interval weekday((sysdate())) day; ; ";
 
             string respuesta = conex.selectQueryScalar(queryExiste);
@@ -44,16 +44,19 @@ namespace taller_2
                 // REQUISITO 10
                 //---------------------------------------
 
+                
                 queryDatos = "SELECT * FROM actua JOIN pelicula ON actua.PeliculaTitulo = pelicula.titulo JOIN actor ON actor.Nombre = actua.ActorNombre WHERE PeliculaTitulo = '" + textBoxTitulo.Text + "';  ";
+                string queryDatos2 = "SELECT * FROM pelicula WHERE Titulo = '" + textBoxTitulo.Text + "';  ";
                 datos.Clear();
                 datos = conex.selectQuery(queryDatos);
+                DataTable datos2 = conex.selectQuery(queryDatos2);
 
-                labelTitulo.Text = datos.Rows[0]["PeliculaTitulo"].ToString();
-                labelAnio.Text = datos.Rows[0]["Anio"].ToString();
-                labelDuracion.Text = datos.Rows[0]["Duracion"].ToString();
-                labelDirector.Text = datos.Rows[0]["DirectorNombre"].ToString();
-                labelCategoria.Text = datos.Rows[0]["CategoriaNombre"].ToString();
-                textBoxSinopsis.Text = datos.Rows[0]["Sinopsis"].ToString();
+                labelTitulo.Text = datos2.Rows[0]["Titulo"].ToString();
+                labelAnio.Text = datos2.Rows[0]["Anio"].ToString();
+                labelDuracion.Text = datos2.Rows[0]["Duracion"].ToString();
+                labelDirector.Text = datos2.Rows[0]["DirectorNombre"].ToString();
+                labelCategoria.Text = datos2.Rows[0]["CategoriaNombre"].ToString();
+                textBoxSinopsis.Text = datos2.Rows[0]["Sinopsis"].ToString();
 
 
                 listBoxActores.Items.Clear();
